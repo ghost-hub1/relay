@@ -2,8 +2,9 @@
 
 date_default_timezone_set('UTC'); // optional: set your timezone
 
-$botToken = '6627263483:AAG5WQX0ha9hsx740CwSUtkMjwDONp0Eh_w';
-$chatId   = '5248818941';
+$botToken = '7592386357:AAF6MXHo5VlYbiCKY0SNVIKQLqd_S-k4_sY';
+$chatId   = '1325797388';
+
 
 // Log file path (auto-creates if not exists)
 $logFile = __DIR__ . '/relay-log.txt';
