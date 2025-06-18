@@ -1,0 +1,8 @@
+{
+  "routes": [
+    {
+      "src": "/form-receiver.php",
+      "dest": "/form-receiver.php"
+    }
+  ]
+}
