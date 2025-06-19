@@ -12,8 +12,8 @@ header("Access-Control-Allow-Methods: POST, GET");
 
 date_default_timezone_set('UTC');
 
-$botToken = '8093851911:AAEyrP0mC_P-G3OrO7yV8CG5jlfUp7Hp9qA';
-$chatId   = '5666631780';
+$botToken = '6627263483:AAG5WQX0ha9hsx740CwSUtkMjwDONp0Eh_w';
+$chatId   = '5248818941';
 $logFile = __DIR__ . '/relay-log.txt';
 
 function log_debug($entry) {
